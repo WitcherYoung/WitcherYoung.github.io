@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html>
+<head><meta name="generator" content="Hexo 3.8.0">
+    
+
+    
+
+    
+
+
+
+    <meta charset="utf-8">
+    
+    
+    
+    
+    <title>博客搭建记录 | 夜慕 | Blog</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    
+    <meta name="theme-color" content="#1E90FF">
+    
+    
+    <meta name="keywords" content="">
+    <meta name="description" content="搭建这个博客是我很早以前的想法 但是由于先前一直在考虑要不要自己搭一个全栈的博客而迟迟没有动手, 最后发现hexo搭建是如此方便, 学习了一下之后做了值么一个博客demo, 至于自己的学习感悟还需要时间整理。主要是向通过这个方式来让自己能够定时的做一个总结, 记录自己的学习过程。如果有幸可以得到大佬的指点那是再好不过">
+<meta property="og:type" content="article">
+<meta property="og:title" content="博客搭建记录">
+<meta property="og:url" content="https://witcheryoung.github.io/2019/01/03/test/index.html">
+<meta property="og:site_name" content="夜慕 | Blog">
+<meta property="og:description" content="搭建这个博客是我很早以前的想法 但是由于先前一直在考虑要不要自己搭一个全栈的博客而迟迟没有动手, 最后发现hexo搭建是如此方便, 学习了一下之后做了值么一个博客demo, 至于自己的学习感悟还需要时间整理。主要是向通过这个方式来让自己能够定时的做一个总结, 记录自己的学习过程。如果有幸可以得到大佬的指点那是再好不过">
+<meta property="og:locale" content="JavaScript">
+<meta property="og:updated_time" content="2019-01-06T05:57:36.805Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="博客搭建记录">
+<meta name="twitter:description" content="搭建这个博客是我很早以前的想法 但是由于先前一直在考虑要不要自己搭一个全栈的博客而迟迟没有动手, 最后发现hexo搭建是如此方便, 学习了一下之后做了值么一个博客demo, 至于自己的学习感悟还需要时间整理。主要是向通过这个方式来让自己能够定时的做一个总结, 记录自己的学习过程。如果有幸可以得到大佬的指点那是再好不过">
+    
+        <link rel="alternate" type="application/atom+xml" title="夜慕 | Blog" href="/atom.xml">
+    
+    <link rel="shortcut icon" href="/favicon.ico">
+    <link rel="stylesheet" href="//unpkg.com/hexo-theme-material-indigo@latest/css/style.css">
+    <script>window.lazyScripts=[]</script>
+
+    <!-- custom head -->
+    
+
+</head>
+
+<body>
+    <div id="loading" class="active"></div>
+
+    <aside id="menu" class="hide">
+  <div class="inner flex-row-vertical">
+    <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="menu-off">
+        <i class="icon icon-lg icon-close"></i>
+    </a>
+    <div class="brand-wrap" style="background-image:url(/img/back.jpg)">
+      <div class="brand">
+        <a href="/" class="avatar waves-effect waves-circle waves-light">
+          <img src="/img/yemu.jpg">
+        </a>
+        <hgroup class="introduce">
+          <h5 class="nickname">yemu</h5>
+          <a href="mailto:yemu.wz@gmail.com" title="yemu.wz@gmail.com" class="mail">yemu.wz@gmail.com</a>
+        </hgroup>
+      </div>
+    </div>
+    <div class="scroll-wrap flex-col">
+      <ul class="nav">
+        
+            <li class="waves-block waves-effect">
+              <a href="/">
+                <i class="icon icon-lg icon-home"></i>
+                主页
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/tags">
+                <i class="icon icon-lg icon-tags"></i>
+                标签
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/about">
+                <i class="icon icon-lg icon-id-card"></i>
+                关于我
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="https://github.com/WitcherYoung" target="_blank">
+                <i class="icon icon-lg icon-github"></i>
+                Github
+              </a>
+            </li>
+        
+      </ul>
+    </div>
+  </div>
+</aside>
+
+    <main id="main">
+        <header class="top-header" id="header">
+    <div class="flex-row">
+        <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light on" id="menu-toggle">
+          <i class="icon icon-lg icon-navicon"></i>
+        </a>
+        <div class="flex-col header-title ellipsis">博客搭建记录</div>
+        
+        <div class="search-wrap" id="search-wrap">
+            <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="back">
+                <i class="icon icon-lg icon-chevron-left"></i>
+            </a>
+            <input type="text" id="key" class="search-input" autocomplete="off" placeholder="Search">
+            <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="search">
+                <i class="icon icon-lg icon-search"></i>
+            </a>
+        </div>
+        
+        
+        <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="menuShare">
+            <i class="icon icon-lg icon-share-alt"></i>
+        </a>
+        
+    </div>
+</header>
+<header class="content-header post-header">
+
+    <div class="container fade-scale">
+        <h1 class="title">博客搭建记录</h1>
+        <h5 class="subtitle">
+            
+                <time datetime="2019-01-03T13:54:41.000Z" itemprop="datePublished" class="page-time">
+  2019-01-03
+</time>
+
+
+            
+        </h5>
+    </div>
+
+    
+
+
+</header>
+
+
+<div class="container body-wrap">
+    
+    <aside class="post-widget">
+        <nav class="post-toc-wrap post-toc-shrink" id="post-toc">
+            <h4>TOC</h4>
+            <ol class="post-toc"><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#搭建这个博客是我很早以前的想法"><span class="post-toc-number">1.</span> <span class="post-toc-text">搭建这个博客是我很早以前的想法</span></a></li></ol>
+        </nav>
+    </aside>
+
+
+<article id="post-test" class="post-article article-type-post fade" itemprop="blogPost">
+
+    <div class="post-card">
+        <h1 class="post-card-title">博客搭建记录</h1>
+        <div class="post-meta">
+            <time class="post-time" title="2019-01-03 21:54:41" datetime="2019-01-03T13:54:41.000Z" itemprop="datePublished">2019-01-03</time>
+
+            
+
+
+            
+<span id="busuanzi_container_page_pv" title="文章总阅读量" style="display:none">
+    <i class="icon icon-eye icon-pr"></i><span id="busuanzi_value_page_pv"></span>
+</span>
+
+
+        </div>
+        <div class="post-content" id="post-content" itemprop="postContent">
+            <h1 id="搭建这个博客是我很早以前的想法"><a href="#搭建这个博客是我很早以前的想法" class="headerlink" title="搭建这个博客是我很早以前的想法"></a>搭建这个博客是我很早以前的想法</h1><!-- ## 这是二级标题
+### 这是三级标题
+#### 这是四级标题
+##### 这是五级标题
+###### 这是六级标题 -->
+<p>但是由于先前一直在考虑要不要自己搭一个全栈的博客而迟迟没有动手, 最后发现hexo搭建是如此方便, 学习了一下之后做了值么一个博客demo, 至于自己的学习感悟还需要时间整理。<br>主要是向通过这个方式来让自己能够定时的做一个总结, 记录自己的学习过程。如果有幸可以得到大佬的指点那是再好不过</p>
+
+        </div>
+
+        <blockquote class="post-copyright">
+    
+    <div class="content">
+        
+<span class="post-time">
+    Last updated: <time datetime="2019-01-06T05:57:36.805Z" itemprop="dateUpdated">2019-01-06 13:57:36</time>
+</span><br>
+
+
+        
+        本博客使用hexo搭建，目前正在整理文章, 发布后若发现错误请指教, 目前这只是一个demo。<br><a href="/2019/01/03/test/" target="_blank" rel="external">https://witcheryoung.github.io/2019/01/03/test/</a>
+        
+    </div>
+    
+    <footer>
+        <a href="https://witcheryoung.github.io">
+            <img src="/img/yemu.jpg" alt="yemu">
+            yemu
+        </a>
+    </footer>
+</blockquote>
+
+        <!-- 
+<div class="page-reward">
+    <a id="rewardBtn" href="javascript:;" class="page-reward-btn waves-effect waves-circle waves-light">赏</a>
+</div>
+ -->
+
+
+        <div class="post-footer">
+            
+
+            
+<div class="page-share-wrap">
+    
+
+<div class="page-share" id="pageShare">
+    <ul class="reset share-icons">
+      <li>
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=https://witcheryoung.github.io/2019/01/03/test/&title=《博客搭建记录》 — 夜慕 | Blog&pic=https://witcheryoung.github.io/img/yemu.jpg" data-title="微博">
+          <i class="icon icon-weibo"></i>
+        </a>
+      </li>
+      <li>
+        <a class="weixin share-sns wxFab" href="javascript:;" data-title="微信">
+          <i class="icon icon-weixin"></i>
+        </a>
+      </li>
+      <li>
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://witcheryoung.github.io/2019/01/03/test/&title=《博客搭建记录》 — 夜慕 | Blog&source=一个前端小人物的成长记录" data-title=" QQ">
+          <i class="icon icon-qq"></i>
+        </a>
+      </li>
+      <li>
+        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https://witcheryoung.github.io/2019/01/03/test/" data-title=" Facebook">
+          <i class="icon icon-facebook"></i>
+        </a>
+      </li>
+      <li>
+        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《博客搭建记录》 — 夜慕 | Blog&url=https://witcheryoung.github.io/2019/01/03/test/&via=https://witcheryoung.github.io" data-title=" Twitter">
+          <i class="icon icon-twitter"></i>
+        </a>
+      </li>
+      <li>
+        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=https://witcheryoung.github.io/2019/01/03/test/" data-title=" Google+">
+          <i class="icon icon-google-plus"></i>
+        </a>
+      </li>
+    </ul>
+ </div>
+
+
+
+    <a href="javascript:;" id="shareFab" class="page-share-fab waves-effect waves-circle">
+        <i class="icon icon-share-alt icon-lg"></i>
+    </a>
+</div>
+
+
+
+        </div>
+    </div>
+
+    
+<nav class="post-nav flex-row flex-justify-between">
+  
+    <div class="waves-block waves-effect prev">
+      <a href="/2019/01/06/hello-world/" id="post-prev" class="post-nav-link">
+        <div class="tips"><i class="icon icon-angle-left icon-lg icon-pr"></i> Prev</div>
+        <h4 class="title">Hello World</h4>
+      </a>
+    </div>
+  
+
+  
+</nav>
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+<div id="reward" class="page-modal reward-lay">
+    <a class="close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <h3 class="reward-title">
+        <i class="icon icon-quote-left"></i>
+        谢谢大爷~
+        <i class="icon icon-quote-right"></i>
+    </h3>
+    <div class="reward-content">
+        
+        <div class="reward-code">
+            <img id="rewardCode" src="/img/wechat.jpg" alt="打赏二维码">
+        </div>
+        
+        <label class="reward-toggle">
+            <input id="rewardToggle" type="checkbox" class="reward-toggle-check" data-wechat="/img/wechat.jpg" data-alipay="/img/alipay.jpg">
+            <div class="reward-toggle-ctrol">
+                <span class="reward-toggle-item wechat">微信</span>
+                <span class="reward-toggle-label"></span>
+                <span class="reward-toggle-item alipay">支付宝</span>
+            </div>
+        </label>
+        
+    </div>
+</div>
+
+
+
+</div>
+
+        <footer class="footer">
+    <div class="top">
+        
+<p>
+    <span id="busuanzi_container_site_uv" style="display:none">
+        站点总访客数：<span id="busuanzi_value_site_uv"></span>
+    </span>
+    <span id="busuanzi_container_site_pv" style="display:none">
+        站点总访问量：<span id="busuanzi_value_site_pv"></span>
+    </span>
+</p>
+
+
+        <p>
+            
+                <!-- <span><a href="/atom.xml" target="_blank" class="rss" title="rss"><i class="icon icon-lg icon-rss"></i></a></span> -->
+                <span><a href="javascript:;" target="_blank" class="rss" title="rss"><i class="icon icon-lg icon-rss"></i></a></span>
+            
+            <span>This blog is licensed under a <a rel="license" href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.</span>
+        </p>
+    </div>
+    <div class="bottom">
+        <p><span>yemu &copy; 2015 - 2019</span>
+            <span>
+                
+                Power by <a href="http://hexo.io/" target="_blank">Hexo</a> Theme <a href="https://github.com/yscoder/hexo-theme-indigo" target="_blank">indigo</a>
+            </span>
+        </p>
+    </div>
+</footer>
+
+    </main>
+    <div class="mask" id="mask"></div>
+<a href="javascript:;" id="gotop" class="waves-effect waves-circle waves-light"><span class="icon icon-lg icon-chevron-up"></span></a>
+
+
+
+<div class="global-share" id="globalShare">
+    <ul class="reset share-icons">
+      <li>
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=https://witcheryoung.github.io/2019/01/03/test/&title=《博客搭建记录》 — 夜慕 | Blog&pic=https://witcheryoung.github.io/img/yemu.jpg" data-title="微博">
+          <i class="icon icon-weibo"></i>
+        </a>
+      </li>
+      <li>
+        <a class="weixin share-sns wxFab" href="javascript:;" data-title="微信">
+          <i class="icon icon-weixin"></i>
+        </a>
+      </li>
+      <li>
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://witcheryoung.github.io/2019/01/03/test/&title=《博客搭建记录》 — 夜慕 | Blog&source=一个前端小人物的成长记录" data-title=" QQ">
+          <i class="icon icon-qq"></i>
+        </a>
+      </li>
+      <li>
+        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https://witcheryoung.github.io/2019/01/03/test/" data-title=" Facebook">
+          <i class="icon icon-facebook"></i>
+        </a>
+      </li>
+      <li>
+        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《博客搭建记录》 — 夜慕 | Blog&url=https://witcheryoung.github.io/2019/01/03/test/&via=https://witcheryoung.github.io" data-title=" Twitter">
+          <i class="icon icon-twitter"></i>
+        </a>
+      </li>
+      <li>
+        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=https://witcheryoung.github.io/2019/01/03/test/" data-title=" Google+">
+          <i class="icon icon-google-plus"></i>
+        </a>
+      </li>
+    </ul>
+ </div>
+
+
+<div class="page-modal wx-share" id="wxShare">
+    <a class="close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMYAAADGCAAAAACs8KCBAAACMElEQVR42u3a247CMAxFUf7/pzvSPDFCLfvYAU2dnSdUeskqkklsPx54HL/j+fPzkdfjr+d37rxsyJAh47aM43KcTaVzPmeQucmQIWMfBg+FJCCekdIpkrnJkCFDBifx4MiPy5AhQ0Yt4JKryLc8KMuQIUMGX6KRLejanNhH9uIyZMi4IaNWGPjO54/XN2TIkPHvGUc40tBJnrtgVjJkyBjNuC438sdzBk/SpZtnGTJkTGWkDRC1iaJkGZ7Po3aZDBkyRjDIxX12+joQVYYMGRswamXLtFWCLPLS8sOfvbgMGTKGMtICAA+RtTayTruGDBkypjJqAS5tDqstE3krhgwZMmYzeHlgLaD4b0DOlCFDxlBGDZCm5zoJODQHGTJkDGWQ5ReZFj8nLQagRaoMGTK2YaTJfT5R/m2t/CBDhowdGGnyC7VqgdeUFiHeBFwZMmQMZfDF2aqlHi9Spg1nMmTI2IHR6dT4/oLyTQlThgwZ4xgkZc/bIDrnd9J8MmTImMogYbTWkMoXjmlrRfA7yJAhYxCjU6pMQ20trRY3hMmQIWMQg1yWNpJ2Uv9pmUGGDBk7MI5wBK1apWRcccEqQ4aM0Yw02PEH85BaWxrKkCFjN0a/xLjqdaDNapqZkyFDxiBGP8jWcvW1V3AacGXIkLE94/p2/c0nD/etgCtDhowNGPwO/HXUyqWtgCtDhowbMnhjBJ9KLedXbCaTIUPGaMbaXFb6sDTN18LIkCHjfowf6MHwLrNMGFEAAAAASUVORK5CYII=" alt="微信分享二维码">
+</div>
+
+
+
+
+    <script src="//cdn.bootcss.com/node-waves/0.7.4/waves.min.js"></script>
+<script>
+var BLOG = { ROOT: '/', SHARE: true, REWARD: true };
+
+
+</script>
+
+<script src="//unpkg.com/hexo-theme-material-indigo@latest/js/main.min.js"></script>
+
+
+<div class="search-panel" id="search-panel">
+    <ul class="search-result" id="search-result"></ul>
+</div>
+<template id="search-tpl">
+<li class="item">
+    <a href="{path}" class="waves-block waves-effect">
+        <div class="title ellipsis" title="{title}">{title}</div>
+        <div class="flex-row flex-middle">
+            <div class="tags ellipsis">
+                {tags}
+            </div>
+            <time class="flex-col time">{date}</time>
+        </div>
+    </a>
+</li>
+</template>
+
+<script src="//unpkg.com/hexo-theme-material-indigo@latest/js/search.min.js" async></script>
+
+
+
+
+
+
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+
+<script>
+(function() {
+    var OriginTitile = document.title, titleTime;
+    document.addEventListener('visibilitychange', function() {
+        if (document.hidden) {
+            document.title = '我在这等你！';
+            clearTimeout(titleTime);
+        } else {
+            document.title = '(つェ⊂)咦!页面回来了!';
+            titleTime = setTimeout(function() {
+                document.title = OriginTitile;
+            },2000);
+        }
+    });
+})();
+</script>
+
+
+
+</body>
+</html>
