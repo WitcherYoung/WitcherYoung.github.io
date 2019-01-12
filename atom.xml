@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://witcheryoung.github.io/"/>
-  <updated>2019-01-06T09:58:14.938Z</updated>
+  <updated>2019-01-12T12:48:00.411Z</updated>
   <id>https://witcheryoung.github.io/</id>
   
   <author>
@@ -17,41 +17,42 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>博客搭建想法</title>
-    <link href="https://witcheryoung.github.io/2019/01/03/test/"/>
-    <id>https://witcheryoung.github.io/2019/01/03/test/</id>
-    <published>2019-01-03T13:54:41.000Z</published>
-    <updated>2019-01-06T09:58:14.938Z</updated>
+    <title>参会日记 —— 蘑菇街 D-DAY 技术沙龙 简述</title>
+    <link href="https://witcheryoung.github.io/2019/01/12/MOGU_2019_D-DAY/"/>
+    <id>https://witcheryoung.github.io/2019/01/12/MOGU_2019_D-DAY/</id>
+    <published>2019-01-12T09:50:00.000Z</published>
+    <updated>2019-01-12T12:48:00.411Z</updated>
     
-    <content type="html"><![CDATA[<h1 id="搭建这个博客是我很早以前的想法"><a href="#搭建这个博客是我很早以前的想法" class="headerlink" title="搭建这个博客是我很早以前的想法"></a>搭建这个博客是我很早以前的想法</h1><!-- ## 这是二级标题### 这是三级标题#### 这是四级标题##### 这是五级标题###### 这是六级标题 --><p>但是由于先前一直在考虑要不要自己搭一个全栈的博客而迟迟没有动手, 最后发现hexo搭建是如此方便, 学习了一下之后做了值么一个博客demo, 至于自己的学习感悟还需要时间整理。<br>主要是向通过这个方式来让自己能够定时的做一个总结, 记录自己的学习过程。如果有幸可以得到大佬的指点那是再好不过</p>]]></content>
+    <content type="html"><![CDATA[<h2 id="本次蘑菇街-D-DAY-技术沙龙前端专场分为了4各部分"><a href="#本次蘑菇街-D-DAY-技术沙龙前端专场分为了4各部分" class="headerlink" title="本次蘑菇街 D-DAY 技术沙龙前端专场分为了4各部分"></a>本次蘑菇街 D-DAY 技术沙龙前端专场分为了4各部分</h2><ul><li><h4 id="让前端解放双手——ui2code"><a href="#让前端解放双手——ui2code" class="headerlink" title="让前端解放双手——ui2code"></a><strong>让前端解放双手——ui2code</strong></h4></li><li><h4 id="Aides-Vue项目脚手架"><a href="#Aides-Vue项目脚手架" class="headerlink" title="Aides Vue项目脚手架"></a><strong>Aides Vue项目脚手架</strong></h4></li><li><h4 id="一套代码多端实现-vx设计"><a href="#一套代码多端实现-vx设计" class="headerlink" title="一套代码多端实现-vx设计"></a><strong>一套代码多端实现-vx设计</strong></h4></li><li><h4 id="小程序-SDK-开发集成实践"><a href="#小程序-SDK-开发集成实践" class="headerlink" title="小程序 SDK 开发集成实践"></a><strong>小程序 SDK 开发集成实践</strong></h4><code>可惜的是今天分享会中讲到所有工具暂时未开源</code></li></ul><hr><h4 id="首先讲到的是ui2code工具"><a href="#首先讲到的是ui2code工具" class="headerlink" title="首先讲到的是ui2code工具"></a>首先讲到的是ui2code工具</h4><p>通常前端的开发流程是这样的</p><blockquote><ol><li>拿到ui设计图</li><li>构思实现ui设计图</li><li>实现ui demo</li><li>模块开发及业务逻辑实现</li><li>前后端联调</li><li>测试上线</li></ol></blockquote><p>如果页面繁多,在写html+css时将会花更多的时间, 从而导致项目开发效率降低, 在这个背景下产生了ui2code工具, 该工具可上传sketch文件或psd文件来动态生成flex布局的html+css代码, 开发复查便可直接使用, 极大地节省开发时间。这样的工具可以让前端工程师更加注重业务层面开发。</p><hr><h4 id="Aides-Vue项目脚手架-1"><a href="#Aides-Vue项目脚手架-1" class="headerlink" title="Aides Vue项目脚手架"></a>Aides Vue项目脚手架</h4><p>Aides Vue脚手架工具是基于Vue创建的, Aides将搭建脚手架的重复工作封装起来, 让开发可以专注业务逻辑。 该脚手架工具有loader实现的功能，plugin实现的功能和其他的一些环境监测组件发布检测等等。</p><hr><h4 id="一套代码多端实现-vx设计-1"><a href="#一套代码多端实现-vx设计-1" class="headerlink" title="一套代码多端实现-vx设计"></a>一套代码多端实现-vx设计</h4><p>复用H5端vue代码，转化为小程序代码</p><blockquote><ol><li>vue2vx转化工具：代码语法转化</li><li>vx基础库：抹平环境差异</li><li>vx打包工具：打出小程序sdk包页面可视化搭建平台<br>基础库＋转化工具+页面搭建平台+打包管理机制</li></ol></blockquote><hr><h4 id="小程序-SDK-开发集成实践-1"><a href="#小程序-SDK-开发集成实践-1" class="headerlink" title="小程序 SDK 开发集成实践"></a>小程序 SDK 开发集成实践</h4><p>当在开发过程中遇到 业务复杂度高 代码复用能力弱 版本管理压力大 的问题时<br>讲师提到了3点来解决这些问题</p><blockquote><ol><li>拆分小程序    SDK工程结构与小程序相同， 以SDK维度进行开发降低SDK以外代码干扰</li><li>高度可复用    通过npm托管SDK标准化版本号管理与框架选型无关</li><li>集成发布平台  以SDK代替分支管理自动化脚本完成集成发布</li></ol></blockquote><hr><h4 id="个人总结"><a href="#个人总结" class="headerlink" title="个人总结"></a>个人总结</h4><p>本次分享会的 <code>关键词</code>  <strong>高效</strong><br>随着前端技术的发展，目前三大框架(<a href="https://reactjs.org/" target="_blank" rel="noopener">React</a>，<a href="https://angularjs.org/" target="_blank" rel="noopener">AngularJS</a>，<a href="https://cn.vuejs.org/index.html" target="_blank" rel="noopener">Vue</a>)已经占据了前端开发的主流。在模块化，组件化的过程中仍然会遇到代码冗余耦合度高的问题，本次D-DAY中所讲到的ui2code是高效开发的一种体现, 加快UI设计图的实现步骤，而将小程序拆分成SDK提供了另一种模块化的思路, 来达到代码复用的目的<br>虽然目前我对 <a href="https://webpack.js.org/" target="_blank" rel="noopener">webpack</a> 还很生疏，也不能完全明白此次分享会的一些实现，但是这种模块化的思想对我在今后的开发肯定有所帮助</p>]]></content>
     
     <summary type="html">
     
       
       
-        &lt;h1 id=&quot;搭建这个博客是我很早以前的想法&quot;&gt;&lt;a href=&quot;#搭建这个博客是我很早以前的想法&quot; class=&quot;headerlink&quot; title=&quot;搭建这个博客是我很早以前的想法&quot;&gt;&lt;/a&gt;搭建这个博客是我很早以前的想法&lt;/h1&gt;&lt;!-- ## 这是二级标题
-### 这是
+        &lt;h2 id=&quot;本次蘑菇街-D-DAY-技术沙龙前端专场分为了4各部分&quot;&gt;&lt;a href=&quot;#本次蘑菇街-D-DAY-技术沙龙前端专场分为了4各部分&quot; class=&quot;headerlink&quot; title=&quot;本次蘑菇街 D-DAY 技术沙龙前端专场分为了4各部分&quot;&gt;&lt;/a&gt;本次蘑菇街
       
     
     </summary>
     
     
+      <category term="参会日记" scheme="https://witcheryoung.github.io/tags/%E5%8F%82%E4%BC%9A%E6%97%A5%E8%AE%B0/"/>
+    
   </entry>
   
   <entry>
-    <title>Hello World</title>
+    <title>博客搭建想法</title>
     <link href="https://witcheryoung.github.io/2019/01/03/hello-world/"/>
     <id>https://witcheryoung.github.io/2019/01/03/hello-world/</id>
-    <published>2019-01-03T13:44:09.765Z</published>
-    <updated>2019-01-03T13:44:09.766Z</updated>
+    <published>2019-01-03T13:54:41.000Z</published>
+    <updated>2019-01-12T09:45:21.654Z</updated>
     
-    <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>]]></content>
+    <content type="html"><![CDATA[<h1 id="搭建这个博客是我很早以前的想法"><a href="#搭建这个博客是我很早以前的想法" class="headerlink" title="搭建这个博客是我很早以前的想法"></a>搭建这个博客是我很早以前的想法</h1><p>但是由于先前一直在考虑要不要自己搭一个全栈的博客而迟迟没有动手, 最后发现hexo搭建是如此方便, 学习了一下之后做了值么一个博客demo。<br>主要是向通过这个方式来让自己能够定时的做一个总结, 记录自己的学习过程。同时也希望在交流中成长。</p><!-- ---title: Hello World(hexo)---Welcome to [Hexo](https://hexo.io/)! This is your very first post. Check [documentation](https://hexo.io/docs/) for more info. If you get any problems when using Hexo, you can find the answer in [troubleshooting](https://hexo.io/docs/troubleshooting.html) or you can ask me on [GitHub](https://github.com/hexojs/hexo/issues).## Quick Start### Create a new post<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/deployment.html">Deployment</a> –&gt;</p>-->]]></content>
     
     <summary type="html">
     
       
       
-        &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.
+        &lt;h1 id=&quot;搭建这个博客是我很早以前的想法&quot;&gt;&lt;a href=&quot;#搭建这个博客是我很早以前的想法&quot; class=&quot;headerlink&quot; title=&quot;搭建这个博客是我很早以前的想法&quot;&gt;&lt;/a&gt;搭建这个博客是我很早以前的想法&lt;/h1&gt;&lt;p&gt;但是由于先前一直在考虑要不要自己搭一
       
     
     </summary>
