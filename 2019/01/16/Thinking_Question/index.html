@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html>
+<head><meta name="generator" content="Hexo 3.8.0">
+    
+
+    
+
+    
+
+
+
+    <meta charset="utf-8">
+    
+    
+    
+    
+    <title>趣事 —— 由一道面试题引发的思考 | 夜慕 | Blog</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    
+    <meta name="theme-color" content="#1E90FF">
+    
+    
+    <meta name="keywords" content="思考">
+    <meta name="description" content="今天逛知乎的时候, 偶然间看到了一个问题, 说的是面试的事——&amp;gt; 传送门 问题的描述是这样的 提问者面试一个5年的前端，却连原型链也搞不清楚，满口都是Vue，React之类的实现。提问者提了一个问题，输入m.n参数，获取一个m长度的都是n的数组，不能用循环，面试者不会写。  那么看到这道题时，我觉得也不难，也尝试了一下，但是结果还是不尽人意这是我刚开始的思路1234567function c">
+<meta name="keywords" content="思考">
+<meta property="og:type" content="article">
+<meta property="og:title" content="趣事 —— 由一道面试题引发的思考">
+<meta property="og:url" content="https://witcheryoung.github.io/2019/01/16/Thinking_Question/index.html">
+<meta property="og:site_name" content="夜慕 | Blog">
+<meta property="og:description" content="今天逛知乎的时候, 偶然间看到了一个问题, 说的是面试的事——&amp;gt; 传送门 问题的描述是这样的 提问者面试一个5年的前端，却连原型链也搞不清楚，满口都是Vue，React之类的实现。提问者提了一个问题，输入m.n参数，获取一个m长度的都是n的数组，不能用循环，面试者不会写。  那么看到这道题时，我觉得也不难，也尝试了一下，但是结果还是不尽人意这是我刚开始的思路1234567function c">
+<meta property="og:locale" content="JavaScript">
+<meta property="og:updated_time" content="2019-01-18T14:18:53.376Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="趣事 —— 由一道面试题引发的思考">
+<meta name="twitter:description" content="今天逛知乎的时候, 偶然间看到了一个问题, 说的是面试的事——&amp;gt; 传送门 问题的描述是这样的 提问者面试一个5年的前端，却连原型链也搞不清楚，满口都是Vue，React之类的实现。提问者提了一个问题，输入m.n参数，获取一个m长度的都是n的数组，不能用循环，面试者不会写。  那么看到这道题时，我觉得也不难，也尝试了一下，但是结果还是不尽人意这是我刚开始的思路1234567function c">
+    
+        <link rel="alternate" type="application/atom+xml" title="夜慕 | Blog" href="/atom.xml">
+    
+    <link rel="shortcut icon" href="/favicon.ico">
+    <link rel="stylesheet" href="/css/style.css?v=1.7.2">
+    <script>window.lazyScripts=[]</script>
+
+    <!-- custom head -->
+    
+
+</head>
+
+<body>
+    <div id="loading" class="active"></div>
+
+    <aside id="menu" class="hide">
+  <div class="inner flex-row-vertical">
+    <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="menu-off">
+        <i class="icon icon-lg icon-close"></i>
+    </a>
+    <div class="brand-wrap" style="background-image:url(/img/back.jpg)">
+      <div class="brand">
+        <a href="/" class="avatar waves-effect waves-circle waves-light">
+          <img src="/img/yemu.jpg">
+        </a>
+        <hgroup class="introduce">
+          <h5 class="nickname">yemu</h5>
+          <a href="mailto:yemu.wz@gmail.com" title="yemu.wz@gmail.com" class="mail">yemu.wz@gmail.com</a>
+        </hgroup>
+      </div>
+    </div>
+    <div class="scroll-wrap flex-col">
+      <ul class="nav">
+        
+            <li class="waves-block waves-effect">
+              <a href="/">
+                <i class="icon icon-lg icon-home"></i>
+                主页
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/tags">
+                <i class="icon icon-lg icon-tags"></i>
+                标签
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/about">
+                <i class="icon icon-lg icon-id-card"></i>
+                关于我
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="https://github.com/WitcherYoung" target="_blank">
+                <i class="icon icon-lg icon-github"></i>
+                Github
+              </a>
+            </li>
+        
+      </ul>
+    </div>
+  </div>
+</aside>
+
+    <main id="main">
+        <header class="top-header" id="header">
+    <div class="flex-row">
+        <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light on" id="menu-toggle">
+          <i class="icon icon-lg icon-navicon"></i>
+        </a>
+        <div class="flex-col header-title ellipsis">趣事 —— 由一道面试题引发的思考</div>
+        
+        <div class="search-wrap" id="search-wrap">
+            <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="back">
+                <i class="icon icon-lg icon-chevron-left"></i>
+            </a>
+            <input type="text" id="key" class="search-input" autocomplete="off" placeholder="Search">
+            <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="search">
+                <i class="icon icon-lg icon-search"></i>
+            </a>
+        </div>
+        
+        
+        <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="menuShare">
+            <i class="icon icon-lg icon-share-alt"></i>
+        </a>
+        
+    </div>
+</header>
+<header class="content-header post-header">
+
+    <div class="container fade-scale">
+        <h1 class="title">趣事 —— 由一道面试题引发的思考</h1>
+        <h5 class="subtitle">
+            
+                <time datetime="2019-01-16T11:19:00.000Z" itemprop="datePublished" class="page-time">
+  2019-01-16
+</time>
+
+
+            
+        </h5>
+    </div>
+
+    
+
+
+</header>
+
+
+<div class="container body-wrap">
+    
+    <aside class="post-widget">
+        <nav class="post-toc-wrap post-toc-shrink" id="post-toc">
+            <h4>TOC</h4>
+            <ol class="post-toc"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#今天逛知乎的时候-偶然间看到了一个问题-说的是面试的事"><span class="post-toc-number">1.</span> <span class="post-toc-text">今天逛知乎的时候, 偶然间看到了一个问题, 说的是面试的事</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#问题的描述是这样的"><span class="post-toc-number">1.0.1.</span> <span class="post-toc-text">问题的描述是这样的</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-6"><a class="post-toc-link" href="#那么看到这道题时，我觉得也不难，也尝试了一下，但是结果还是不尽人意"><span class="post-toc-number">1.0.1.0.1.</span> <span class="post-toc-text">那么看到这道题时，我觉得也不难，也尝试了一下，但是结果还是不尽人意</span></a></li></ol></li></ol></li></ol>
+        </nav>
+    </aside>
+
+
+<article id="post-Thinking_Question" class="post-article article-type-post fade" itemprop="blogPost">
+
+    <div class="post-card">
+        <h1 class="post-card-title">趣事 —— 由一道面试题引发的思考</h1>
+        <div class="post-meta">
+            <time class="post-time" title="2019-01-16 19:19:00" datetime="2019-01-16T11:19:00.000Z" itemprop="datePublished">2019-01-16</time>
+
+            
+
+
+            
+<span id="busuanzi_container_page_pv" title="文章总阅读量" style="display:none">
+    <i class="icon icon-eye icon-pr"></i><span id="busuanzi_value_page_pv"></span>
+</span>
+
+
+        </div>
+        <div class="post-content" id="post-content" itemprop="postContent">
+            <h2 id="今天逛知乎的时候-偶然间看到了一个问题-说的是面试的事"><a href="#今天逛知乎的时候-偶然间看到了一个问题-说的是面试的事" class="headerlink" title="今天逛知乎的时候, 偶然间看到了一个问题, 说的是面试的事"></a>今天逛知乎的时候, 偶然间看到了一个问题, 说的是面试的事</h2><p>——&gt; <a href="https://www.zhihu.com/question/60165921" target="_blank" rel="noopener">传送门</a></p>
+<h4 id="问题的描述是这样的"><a href="#问题的描述是这样的" class="headerlink" title="问题的描述是这样的"></a>问题的描述是这样的</h4><blockquote>
+<p>提问者面试一个5年的前端，却连原型链也搞不清楚，满口都是Vue，React之类的实现。<br>提问者提了一个问题，输入m.n参数，获取一个m长度的都是n的数组，不能用循环，面试者不会写。</p>
+</blockquote>
+<h6 id="那么看到这道题时，我觉得也不难，也尝试了一下，但是结果还是不尽人意"><a href="#那么看到这道题时，我觉得也不难，也尝试了一下，但是结果还是不尽人意" class="headerlink" title="那么看到这道题时，我觉得也不难，也尝试了一下，但是结果还是不尽人意"></a>那么看到这道题时，我觉得也不难，也尝试了一下，但是结果还是不尽人意</h6><p>这是我刚开始的思路<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">createArray</span>(<span class="params">m, n</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">var</span> arr = <span class="keyword">new</span> <span class="built_in">Array</span>(m);</span><br><span class="line">    arr = arr.map(<span class="function"><span class="keyword">function</span>(<span class="params">item, index, array</span>) </span>&#123;</span><br><span class="line">        array[index] = n;</span><br><span class="line">    &#125;)</span><br><span class="line">    <span class="keyword">return</span> arr</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> arr1 = createArray(<span class="number">2</span>, <span class="number">1</span>);</span><br><span class="line"><span class="built_in">console</span>.log(arr1);</span><br><span class="line"><span class="comment">// [ &lt;2 empty items&gt; ]</span></span><br></pre></td></tr></table></figure>
+<p>很可惜它并没有打印我预想的结果</p>
+<blockquote>
+<p>debugger逐步执行的时候，我发现数组的map()方法并没有进入执行<br>—&gt; <strong>原因</strong> &nbsp; map()等数组方法, 在参照数组为空数组时, 调用的回调函数是不会生效的, 当然如果素组元素<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 是空字符串时是完全没有问题的。</p>
+</blockquote>
+<p>那么不能使用循环，那么递归是一种不错的实现方式</p>
+<ol>
+<li><p>仅仅使用函数递归实现，(arr.length == m) 数组长度等于m参数作为递归结束的条件</p>
+ <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">createArray</span>(<span class="params">m, n, arr</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">if</span>(arr.length == m) &#123;</span><br><span class="line">        <span class="keyword">return</span> arr;</span><br><span class="line">    &#125;<span class="keyword">else</span> &#123;</span><br><span class="line">        arr.push(n);</span><br><span class="line">        <span class="keyword">return</span> <span class="built_in">arguments</span>.callee(m, n, arr);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> arr1 = createArray(<span class="number">2</span>, <span class="number">1</span>, []);</span><br><span class="line"><span class="built_in">console</span>.log(arr1);  <span class="comment">//  [ 1, 1 ]</span></span><br><span class="line"><span class="keyword">var</span> arr2 = createArray(<span class="number">3</span>, <span class="number">2</span>, []);</span><br><span class="line"><span class="built_in">console</span>.log(arr2);  <span class="comment">//  [ 2, 2, 2 ]</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>本质上还是使用递归实现，只是在放进了一个函数中，也就是闭包。<br> 第一种方式 返回一个对象，相当于实现了私有方法仅有创建了createArray的闭包才可调用；<br> 第二种方式 返回的是一个函数，那么arr1就相当于create函数，只是换了一个名字。</p>
+ <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">createArray</span>(<span class="params">m, n</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">var</span> arr = <span class="keyword">new</span> <span class="built_in">Array</span>();</span><br><span class="line">    <span class="keyword">return</span> &#123;</span><br><span class="line">        create: <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">            <span class="keyword">if</span> (arr.length == m) &#123;</span><br><span class="line">                <span class="keyword">return</span> arr;</span><br><span class="line">            &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">                arr.push(n);</span><br><span class="line">                <span class="keyword">return</span> <span class="built_in">arguments</span>.callee();</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> arr1 = createArray(<span class="number">2</span>, <span class="number">1</span>);</span><br><span class="line"><span class="built_in">console</span>.log(arr1.create());</span><br></pre></td></tr></table></figure>
+ <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">createArray</span>(<span class="params">m, n</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">var</span> arr = <span class="keyword">new</span> <span class="built_in">Array</span>();</span><br><span class="line">    <span class="function"><span class="keyword">function</span> <span class="title">create</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">        <span class="keyword">if</span>(arr.length == m) &#123;</span><br><span class="line">            <span class="keyword">return</span> arr;</span><br><span class="line">        &#125;<span class="keyword">else</span> &#123;</span><br><span class="line">            arr.push(n);</span><br><span class="line">            <span class="keyword">return</span> create()</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> create;</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">var</span> arr1 = createArray(<span class="number">2</span>, <span class="number">1</span>);</span><br><span class="line"><span class="built_in">console</span>.log(arr1());</span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+<hr>
+<blockquote>
+<p>学无止境，肯定还有另外的方法，明白其原理之后继续记录吧。<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 至于闭包，个人感觉与强类型语言的类( 比如C++，Java等 )有比较大的相似之处</span></span><br><span class="line"><span class="comment">// 那就整理整理单独讲讲吧</span></span><br><span class="line"><span class="comment">// ( 感觉强类型语言的条条框框很有限制感，所以前来学习JavaScript啦 )</span></span><br><span class="line"><span class="comment">// 其实是并没有认真学的缘故叭 (-_-)</span></span><br></pre></td></tr></table></figure></p>
+</blockquote>
+
+        </div>
+
+        <blockquote class="post-copyright">
+    
+    <div class="content">
+        
+<span class="post-time">
+    Last updated: <time datetime="2019-01-18T14:18:53.376Z" itemprop="dateUpdated">2019-01-18 22:18:53</time>
+</span><br>
+
+
+        
+        本博客使用hexo搭建, 若发现错误欢迎发邮件yemu.wz@gmail.com指出。 ——  转载请注明出处
+        
+    </div>
+    
+    <footer>
+        <a href="https://witcheryoung.github.io">
+            <img src="/img/yemu.jpg" alt="yemu">
+            yemu
+        </a>
+    </footer>
+</blockquote>
+
+        <!-- 
+<div class="page-reward">
+    <a id="rewardBtn" href="javascript:;" class="page-reward-btn waves-effect waves-circle waves-light">赏</a>
+</div>
+ -->
+
+
+        <div class="post-footer">
+            
+	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/思考/">思考</a></li></ul>
+
+
+            
+<div class="page-share-wrap">
+    
+
+<div class="page-share" id="pageShare">
+    <ul class="reset share-icons">
+      <li>
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=https://witcheryoung.github.io/2019/01/16/Thinking_Question/&title=《趣事 —— 由一道面试题引发的思考》 — 夜慕 | Blog&pic=https://witcheryoung.github.io/img/yemu.jpg" data-title="微博">
+          <i class="icon icon-weibo"></i>
+        </a>
+      </li>
+      <li>
+        <a class="weixin share-sns wxFab" href="javascript:;" data-title="微信">
+          <i class="icon icon-weixin"></i>
+        </a>
+      </li>
+      <li>
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://witcheryoung.github.io/2019/01/16/Thinking_Question/&title=《趣事 —— 由一道面试题引发的思考》 — 夜慕 | Blog&source=一个前端小人物的成长记录" data-title=" QQ">
+          <i class="icon icon-qq"></i>
+        </a>
+      </li>
+      <li>
+        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https://witcheryoung.github.io/2019/01/16/Thinking_Question/" data-title=" Facebook">
+          <i class="icon icon-facebook"></i>
+        </a>
+      </li>
+      <li>
+        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《趣事 —— 由一道面试题引发的思考》 — 夜慕 | Blog&url=https://witcheryoung.github.io/2019/01/16/Thinking_Question/&via=https://witcheryoung.github.io" data-title=" Twitter">
+          <i class="icon icon-twitter"></i>
+        </a>
+      </li>
+      <li>
+        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=https://witcheryoung.github.io/2019/01/16/Thinking_Question/" data-title=" Google+">
+          <i class="icon icon-google-plus"></i>
+        </a>
+      </li>
+    </ul>
+ </div>
+
+
+
+    <a href="javascript:;" id="shareFab" class="page-share-fab waves-effect waves-circle">
+        <i class="icon icon-share-alt icon-lg"></i>
+    </a>
+</div>
+
+
+
+        </div>
+    </div>
+
+    
+<nav class="post-nav flex-row flex-justify-between flex-row-reverse">
+  
+
+  
+    <div class="waves-block waves-effect next">
+      <a href="/2019/01/12/MOGU_2019_D-DAY/" id="post-next" class="post-nav-link">
+        <div class="tips">Next <i class="icon icon-angle-right icon-lg icon-pl"></i></div>
+        <h4 class="title">参会日记 —— 蘑菇街 D-DAY 技术沙龙 简述</h4>
+      </a>
+    </div>
+  
+</nav>
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+<div id="reward" class="page-modal reward-lay">
+    <a class="close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <h3 class="reward-title">
+        <i class="icon icon-quote-left"></i>
+        谢谢大爷~
+        <i class="icon icon-quote-right"></i>
+    </h3>
+    <div class="reward-content">
+        
+        <div class="reward-code">
+            <img id="rewardCode" src="/img/wechat.jpg" alt="打赏二维码">
+        </div>
+        
+        <label class="reward-toggle">
+            <input id="rewardToggle" type="checkbox" class="reward-toggle-check" data-wechat="/img/wechat.jpg" data-alipay="/img/alipay.jpg">
+            <div class="reward-toggle-ctrol">
+                <span class="reward-toggle-item wechat">微信</span>
+                <span class="reward-toggle-label"></span>
+                <span class="reward-toggle-item alipay">支付宝</span>
+            </div>
+        </label>
+        
+    </div>
+</div>
+
+
+
+</div>
+
+        <footer class="footer">
+    <div class="top">
+        
+<p>
+    <span id="busuanzi_container_site_uv" style="display:none">
+        站点总访客数：<span id="busuanzi_value_site_uv"></span>
+    </span>
+    <span id="busuanzi_container_site_pv" style="display:none">
+        站点总访问量：<span id="busuanzi_value_site_pv"></span>
+    </span>
+</p>
+
+
+        <p>
+            
+                <!-- <span><a href="/atom.xml" target="_blank" class="rss" title="rss"><i class="icon icon-lg icon-rss"></i></a></span> -->
+                <span><a href="javascript:;" target="_blank" class="rss" title="rss"><i class="icon icon-lg icon-rss"></i></a></span>
+            
+            <span>This blog is licensed under a <a rel="license" href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.</span>
+        </p>
+    </div>
+    <div class="bottom">
+        <p><span>yemu &copy; 2015 - 2019</span>
+            <span>
+                
+                Power by <a href="http://hexo.io/" target="_blank">Hexo</a> Theme <a href="https://github.com/yscoder/hexo-theme-indigo" target="_blank">indigo</a>
+            </span>
+        </p>
+    </div>
+</footer>
+
+    </main>
+    <div class="mask" id="mask"></div>
+<a href="javascript:;" id="gotop" class="waves-effect waves-circle waves-light"><span class="icon icon-lg icon-chevron-up"></span></a>
+
+
+
+<div class="global-share" id="globalShare">
+    <ul class="reset share-icons">
+      <li>
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=https://witcheryoung.github.io/2019/01/16/Thinking_Question/&title=《趣事 —— 由一道面试题引发的思考》 — 夜慕 | Blog&pic=https://witcheryoung.github.io/img/yemu.jpg" data-title="微博">
+          <i class="icon icon-weibo"></i>
+        </a>
+      </li>
+      <li>
+        <a class="weixin share-sns wxFab" href="javascript:;" data-title="微信">
+          <i class="icon icon-weixin"></i>
+        </a>
+      </li>
+      <li>
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://witcheryoung.github.io/2019/01/16/Thinking_Question/&title=《趣事 —— 由一道面试题引发的思考》 — 夜慕 | Blog&source=一个前端小人物的成长记录" data-title=" QQ">
+          <i class="icon icon-qq"></i>
+        </a>
+      </li>
+      <li>
+        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https://witcheryoung.github.io/2019/01/16/Thinking_Question/" data-title=" Facebook">
+          <i class="icon icon-facebook"></i>
+        </a>
+      </li>
+      <li>
+        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《趣事 —— 由一道面试题引发的思考》 — 夜慕 | Blog&url=https://witcheryoung.github.io/2019/01/16/Thinking_Question/&via=https://witcheryoung.github.io" data-title=" Twitter">
+          <i class="icon icon-twitter"></i>
+        </a>
+      </li>
+      <li>
+        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=https://witcheryoung.github.io/2019/01/16/Thinking_Question/" data-title=" Google+">
+          <i class="icon icon-google-plus"></i>
+        </a>
+      </li>
+    </ul>
+ </div>
+
+
+<div class="page-modal wx-share" id="wxShare">
+    <a class="close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMYAAADGCAAAAACs8KCBAAACLElEQVR42u3awY6DMAxF0f7/TzPbSiPgvpe2Es7NqkIpyWFhObFfLzyOt5HOPPvX2UyySjlkyJDxWMZxOcic64X5m/+zgxVlyJCxAeNsef6bbOKaSt5/+lyGDBkywNZ5GO3WlSFDhoz1IHgdcLv5MmTIkJEeYr93YffTs7gMGTIeyOCb+P3vr9Q3ZMiQ8SjGEQ5eqiRBk1/S3exKhgwZoxk8wPHEMS2CogMqSTRlyJAxmpEmhXyjvJBAnn84t5UhQ8ajGDx48favlTCdXsPJkCFjN8Z6c2payOQFTpThypAhYygjDY7pzfzK9Rz/cDJkyJjKIMfFjkcYvHh5E/plyJAxmsETsq5VqyshcMANTIYMGYMYaSq2UryMM1YevmXIkDGUkaZ9XfMWOabysmVwXyhDhowRjPRqvisx8haKMpOVIUPGaEa6cDdzvYRwE7JlyJCxAYMs1oXXrmkjbsKQIUPGaEZ3ic8Plp86Epc9IzJkyBjH4JUEktJ1z9eTURkyZExl8NSNJ5Q8RKZpaNlsIUOGjHEMfh1GMKg6EZYtUc+IDBkyRjO6l/KFUZbK2yxkyJAxmnGEgx8seWLXJYsyZMjYh9EFu3QZ8jl4qxk/eMuQIWMSY2WLPJVM3xN/bxkyZGzA4MvzAJpe4a3sVoYMGTL45RoPlOutZjJkyJCRBlwegruy6M1MGTJkbMDoGizSxgsefEmxQYYMGfsw0qMjOZp+qgCQzpQhQ8Y4xh8l79E/+LtfjAAAAABJRU5ErkJggg==" alt="微信分享二维码">
+</div>
+
+
+
+
+    <script src="//cdn.bootcss.com/node-waves/0.7.4/waves.min.js"></script>
+<script>
+var BLOG = { ROOT: '/', SHARE: true, REWARD: true };
+
+
+</script>
+
+<script src="/js/main.min.js?v=1.7.2"></script>
+
+
+<div class="search-panel" id="search-panel">
+    <ul class="search-result" id="search-result"></ul>
+</div>
+<template id="search-tpl">
+<li class="item">
+    <a href="{path}" class="waves-block waves-effect">
+        <div class="title ellipsis" title="{title}">{title}</div>
+        <div class="flex-row flex-middle">
+            <div class="tags ellipsis">
+                {tags}
+            </div>
+            <time class="flex-col time">{date}</time>
+        </div>
+    </a>
+</li>
+</template>
+
+<script src="/js/search.min.js?v=1.7.2" async></script>
+
+
+
+
+
+
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+
+<script>
+(function() {
+    var OriginTitile = document.title, titleTime;
+    document.addEventListener('visibilitychange', function() {
+        if (document.hidden) {
+            document.title = '我在这等你！';
+            clearTimeout(titleTime);
+        } else {
+            document.title = '(つェ⊂)咦!页面回来了!';
+            titleTime = setTimeout(function() {
+                document.title = OriginTitile;
+            },2000);
+        }
+    });
+})();
+</script>
+
+
+
+</body>
+</html>
